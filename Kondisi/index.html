@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kondisi</title>
+  </head>
+  <body>
+    <div id="data"></div>
+    <script>
+      var lampu = "merah";
+
+      switch (lampu) {
+        case "merah":
+          console.log("lampu merah");
+          document.getElementById("data").innerHTML = "Lampu Merah";
+          break;
+
+        case "kuning":
+          console.log("lampu kuning");
+          document.getElementById("data").innerHTML = "Lampu Kuning";
+          break;
+
+        case "hijau":
+          console.log("lampu hijau");
+          document.getElementById("data").innerHTML = "Lampu Hijau";
+          break;
+
+        default:
+          console.log("lampu tidak ada");
+          document.getElementById("data").innerHTML =
+            "Lampu Tidak Memiliki Warna";
+          break;
+      }
+
+      if (lampu == "merah") {
+        console.log("Lampu Nyala Merah");
+      } else if (lampu == "kuning") {
+        console.log("Lampu Nyala Kuning");
+      } else if (lampu == "hijau") {
+        console.log("Lampu Nyala Hijau");
+      } else {
+        console.log("Lampu Tidak Memiliki Warna");
+      }
+    </script>
+  </body>
+</html>
