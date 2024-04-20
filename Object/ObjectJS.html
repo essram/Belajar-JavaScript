@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object dalamm JavaScript</title>
+</head>
+<body>
+    <p id="data"></p>
+
+    <script>
+        var mobil = {
+            nama : "Toyota",
+            merk : "Agya",
+            berat : 1500,
+            warna : "Hitam",
+            maju : function(){
+                return "Mulai maju";
+            },
+            mundur : function(){
+                return "Mulai mundur";
+            }
+        }
+        document.getElementById("data").innerHTML = mobil.nama + " " + mobil.maju();
+    </script>
+</body> 
+</html>
